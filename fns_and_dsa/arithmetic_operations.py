@@ -1,16 +1,16 @@
 def perform_operation(num1, num2, operation):
     
     match operation:
-        case '+': 
+        case 'add': 
             result = num1+num2
             return result
-        case '-':
+        case 'subtract':
             result = num1-num2
             return result
-        case '*':
+        case 'multiply':
             result = num1*num2
             return result
-        case '/':
+        case 'divide':
             if num2 == 0:
              print("Error: Division by zero is not allowed")
             else:
