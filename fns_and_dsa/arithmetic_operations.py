@@ -12,9 +12,9 @@ def perform_operation(num1, num2, operation):
             return result
         case 'divide':
             if num2 == 0:
-             print("Error: Division by zero is not allowed")
+             return "Error: Division by zero is not allowed"
             else:
              result = num1/num2
              return result 
         case _:
-            print('Invalid Operation')
+            return 'Invalid Operation'
