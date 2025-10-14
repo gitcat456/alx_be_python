@@ -4,7 +4,12 @@
 for i in range(3):   #i<10
     print(f"loop:{i}")
     
-#looping over a list 
+#looping through a list 
 languages = ["python","javascript", "java", "mySql", "Cpp"]
 for language in languages:
     print(f"The user has experience in {language}")
+    
+#loop through a string
+name ="Engineer Denzel"
+for letter in name:
+    print (f"{letter}")
