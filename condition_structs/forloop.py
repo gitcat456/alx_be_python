@@ -13,3 +13,11 @@ for language in languages:
 name ="Engineer Denzel"
 for letter in name:
     print (f"{letter}")
+    
+#loop through a dictionary
+user = {
+    "username": "okoth Denzel",
+    "_id": "68ac32459y"
+}
+for key in user:
+    print(key, "->", user[key])
