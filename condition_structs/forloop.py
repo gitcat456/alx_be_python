@@ -20,4 +20,13 @@ user = {
     "_id": "68ac32459y"
 }
 for key in user:
-    print(key, "->", user[key])
+    print(key, "->", user[key]) #acess with brackets
+    
+#option2 using .items():
+for key, value in user.items():
+    print(key, "->", value)
+    
+#nested for loops
+for i in range(3):
+     for j in range(2):
+         print(f"i={i}, j={j}")
