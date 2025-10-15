@@ -5,7 +5,7 @@ class Student:
         self.course = course
         
     def get_student_info(self):
-        print(f"{self.reg_no}, {self.name}, {self.course}")
+        return f"{self.reg_no}, {self.name}, {self.course}"
     
 #objects
 
