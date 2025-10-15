@@ -16,3 +16,20 @@ product_inventory = {
     "orange": 0
 }
 
+def purchase_item(item, quantity):
+    try:
+        if product_inventory[item] == 0:
+            raise OutOfStockError(item)
+        else:
+            print(f"Purchase succesfull: {quantity} {item}(s)")
+    except KeyError:
+       print(f"Sorry, '{item}' is not available in our inventory.")
+
+#testing the custom exception
+
+try:
+    purchase_item("apple", 3)
+    purchase_item("orange", 1)
+    purchase_item("watermelon", 4)
+except OutOfStockError as e:
+    print(e)
