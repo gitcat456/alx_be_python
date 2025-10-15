@@ -10,13 +10,19 @@ class Car:
         return full_name
 
     def read_odometer(self):
-        print(f"This car has {self.odometer_reading} miles on it.")
+        return f"This car has {self.odometer_reading} miles on it."
 
     def update_odometer(self, mileage):
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
+            return self.read_odometer()
         else:
             print("You can't roll back an odometer!")
 
     def increment_odometer(self, miles):
            self.odometer_reading += miles
+           return self.read_odometer()
+           
+           
+car1 = Car("BMW", "CX_5", 2023)
+print(car1.increment_odometer(50))
