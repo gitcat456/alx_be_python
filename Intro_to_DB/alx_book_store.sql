@@ -35,6 +35,7 @@ table_definitions = [
     CREATE TABLE IF NOT EXISTS Customers (
         customer_id INT PRIMARY KEY,
         customer_name VARCHAR(215),
+        email VARCHAR(215),
         address TEXT
     )
     """,
@@ -57,6 +58,6 @@ table_definitions = [
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
     )
-    
+
     """
 ]
