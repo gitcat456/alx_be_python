@@ -10,7 +10,7 @@ def play_game():
 
         match guess:
             case x if x == secret_number:
-                print(f"🎉 Congratulations, you guessed it in {guesses} tries!")
+                print(f"Congratulations, you guessed it in {guesses} tries!")
                 break
             case x if x > secret_number:
                 print("Oops, your guess is a bit high. Try again!")
@@ -21,5 +21,5 @@ while True:
     play_game()
     again = input("Do you want to play again? (yes/no): ").strip().lower()
     if again != "yes":
-        print("Thanks for playing! Goodbye 👋")
+        print("Thanks for playing! Goodbye")
         break
